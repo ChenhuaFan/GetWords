@@ -1,0 +1,45 @@
+.section-about {
+    width: 100%;
+    height: 100vh;
+    background: #fafafa;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: visibility 0s 0s linear , opacity .24s ease-out, transform .24s ease-out;
+}
+
+.content-about {
+    position: relative;
+    width: auto;
+    height: 210px;
+    margin: 32vh 0;
+}
+
+.section-about > h1,
+.section-about > p {
+    
+}
+
+.about-line {
+    width: 50%;
+    color: hsl(0,0%,88%);
+}
+
+.about-btn {
+    background: none;
+    border: 1px solid #4b8aa5;
+    color: #4b8aa5;
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.about-btn:hover {
+    background: #4b8aa5;
+    color: #ffffff;
+    transition: 0.5s;
+}

@@ -1,0 +1,21 @@
+{
+  "public": {
+    "root": "",
+    "txt": "txt/",
+    "voice": "voice/",
+    "email": "",
+    "warningNumber": 15,
+    "errorNumber": 30,
+    "itemsPerPage": 20
+  },
+  "private": {
+    "first-use": true,
+    "version": "1.4.1",
+    "word-split-flag": ">",
+    "mean-split-flag": ",",
+    "dic_api_http": "http://openapi.youdao.com/api",
+    "dic_id": "2a3ade6d7f23725c",
+    "dic_key": "DV6xS1trE55eAdJmD35svH6vZD9CMeD2",
+    "dic_sign": ""
+  }
+}

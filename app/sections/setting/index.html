@@ -1,0 +1,40 @@
+<template class="task-template">
+    <div class="section-setting content-pages hide">
+        <div class="function-title">
+            <h1 class="main-title left-border-green">设置</h1>
+            <!-- <button class="btn btn-disabled" id="changeBtn" disabled="disabled">选择单词文件夹！</button> -->
+            <p style="padding-left: 15px; color:red" id="noRootSetting">您没有设置根目录.</p>
+            <p style="padding-left: 15px; color:green" id="haveRootSetting">已完成设置，您可以随时更改设定.</p>
+            <br>
+            <div class="left-border-green search-box" id="noRootBox">
+                <div class="" id="step1">
+                    <h3>Case 1: 我不知道什么是单词根目录，帮我解决！</h3>
+                    <label class="">请选择桌面文件夹： </label>
+                    <input type="file" id="desktop"  webkitdirectory directory/>
+                </div>
+                <br>
+                <div class="" id="step1">
+                    <h3>Case 2: 我知道我的单词根目录</h3>
+                    <label class="">选择根目录： </label>
+                    <input type="file" id="rootDic"  webkitdirectory directory/>
+                </div>
+            </div>
+            <br>
+            <div class="search-box left-border-green" id="step1">
+                <h3>提醒服务相关（留空将无法使用“注册提醒服务”模块）</h3>
+                <label class="">邮箱地址： </label>
+                <input type="email" id="email" placeholder="用于接受学习提醒"/>
+            </div>
+        </div>
+        <div class="work-space">
+            <div class="work-space">
+                <ul class="setting-items-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        require('./app/renderProcess/setting');
+    </script>
+
+</template>

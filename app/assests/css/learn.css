@@ -1,0 +1,138 @@
+.how-to-use {
+    background-image: url(../imgs/howToUse.png);
+    background-size: 80%;
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+}
+
+.review-phase {
+    color: #e28683;
+}
+
+.learn-aera-title {
+    padding: 15px;
+}
+
+.learn-aera-main {
+    /* padding: 15px; */
+    text-align: center;
+}
+
+.learn-aera-main-panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.learn-aera-main-panel li {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.learn-aera-main-question {
+    width: 100%;
+    font-size: 2rem;
+    padding: 30px 0;
+}
+
+.learn-mask ul,
+.learn-aera-main-options ul,
+.optionsBox ul {
+    padding: 10px 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-mask li,
+.learn-aera-main-options li,
+.optionsBox li  {
+    list-style-type:none;
+    text-align: left;
+}
+
+.answerBox {    
+    width: 100%;
+    font-size: 1rem;
+    padding: 30px 0;
+}
+
+.option {
+    margin: 8px;
+    padding: 10px 20px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 3px solid;
+    border-top: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.option-default {
+    border-color: #429fca;
+    background: #4ab2e2;
+}
+
+.option-right {
+    background: #42b983;
+    border-color: #3ca576;
+}
+
+.option-wrong {
+    background: #cc4848;
+    border-color: #ad3a3a;
+}
+
+.option-warning {
+    background: #f6be4f;
+    border-color: #d1a142;
+}
+
+.option:hover {
+    border-bottom-width: 2px;
+    padding: 11px 20px 10px 20px;
+    transition: ease-in-out 130ms;
+}
+
+.option:active {
+    border-bottom-width: 1px;
+    padding: 12px 20px 10px 20px;
+    transition: ease-in-out 130ms;
+    outline: none;
+}
+
+.option:focus {
+    outline: none;
+}
+
+.option-disabled,
+.option-disabled:hover,
+.option-disabled:active,
+.option-disabled:focus {
+    margin: 15px;
+    padding: 10px 20px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 3px solid;
+    border-color: #727272;
+    border-top: none;
+    border-radius: 5px;
+    background: #b8b8b8;
+    color: #fff;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.ch-question {
+    font-size: 1rem;
+}
+
+.welldone {
+    text-align: center;
+    padding-top: 20vh;
+}

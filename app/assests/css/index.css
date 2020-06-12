@@ -1,0 +1,261 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #2c3e50;
+}
+
+.hide {
+    display: none;
+    transition: ease-in-out 0.3s;
+}
+
+.nav-wrapper {
+    width: 30%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    bottom: 0;
+    background-color: #fafafa;
+    border-right: 1px solid lightgray;
+}
+
+.nav-title {
+    padding: 20px 0;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+}
+
+.main-title {
+    margin: 15px 15px;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: top;
+}
+
+.sub-title {
+    margin: 5px 15px;
+    color: #7f8c8d;
+}
+
+.nav-items-list {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.nav-items-list > li {
+    list-style-type: none;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    color: #2c3e50;
+    outline:none;
+}
+
+.nav-item:hover {
+    border-right: 10px solid #42b983;
+    color: #42b983;
+    padding-left: 25px;
+    padding-right: 5px;
+    transition: ease-in-out 0.2s;
+    outline:none;
+}
+
+.nav-item:active {
+    border-right: 10px solid #42b983;
+    color: #42b983;
+    padding-left: 25px;
+    padding-right: 5px;
+    outline:none;
+}
+
+.nav-item-focus {
+    border-right: 10px solid #42b983;
+    color: #42b983;
+    padding-left: 25px;
+    padding-right: 5px;
+    outline:none;
+}
+
+.nav-footer {
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* content 部分*/
+.content-pages {
+    width: 70%; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+}
+
+.function-title {
+    padding: 20px 15px;
+}
+
+.functions-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.functions-list > li {
+    list-style-type: none;
+}
+
+.function-item {
+    background: none;
+    border: none;
+    margin: 5px 15px;
+    padding: 0;
+    color: #7f8c8d;
+    font-size: 1em;
+    text-align: left;
+}
+
+.work-space {
+    padding: 0 15px 15px 15px;
+}
+
+.search-box {
+    margin: 15px;
+}
+
+input[type='text'] {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin: 15px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+input[type='text']:hover,
+input[type='text']:active,
+input[type='text']:focus {
+    border-color: #c76768;
+    transition: linear 0.2s;
+    outline: none;
+}
+
+label {
+    font-size: 1rem;
+}
+
+.left-border-green {
+    border-left: 5px solid #42b983;
+    padding-left: 10px;
+}
+
+/*按钮*/
+
+.btn {
+    margin: 15px;
+    padding: 10px 20px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 3px solid;
+    border-top: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-default {
+    border-color: #429fca;
+    background: #4ab2e2;
+}
+
+.btn-right {
+    background: #42b983;
+    border-color: #3ca576;
+}
+
+.btn-wrong {
+    background: #cc4848;
+    border-color: #ad3a3a;
+}
+
+.btn-warning {
+    background: #f6be4f;
+    border-color: #d1a142;
+}
+
+.btn-warning:hover {
+    background: #cc4848;
+    border-color: #ad3a3a;
+    transition: ease-in-out 130ms;
+}
+
+.btn:hover {
+    border-bottom-width: 2px;
+    padding: 11px 20px 10px 20px;
+    transition: ease-in-out 130ms;
+}
+
+.btn:active {
+    border-bottom-width: 1px;
+    padding: 12px 20px 10px 20px;
+    transition: ease-in-out 130ms;
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-disabled,
+.btn-disabled:hover,
+.btn-disabled:active,
+.btn-disabled:focus {
+    margin: 15px;
+    padding: 10px 20px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 3px solid;
+    border-color: #727272;
+    border-top: none;
+    border-radius: 5px;
+    background: #b8b8b8;
+    color: #fff;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.notification-box {
+    padding: 10px;
+    border: #2c3e50;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #2c3e50;
+    color: #fff;
+    width: 20%;
+    box-shadow: 1px 1px 3px 1px #a0a0a0;
+}
+
+.notification-title {
+    margin: 0;
+    padding: 0;
+}
+
+.notification-content {
+    margin: 0;
+    padding: 0;
+}

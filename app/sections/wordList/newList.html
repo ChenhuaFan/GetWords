@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>新建单词表</title>
+        <style>
+            body {    
+                font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+                padding: 0;
+                margin: 0;
+                color: #2c3e50;
+                background-color: #f6f8fa;
+            }
+            .hide {
+                display: none;
+            }
+            .new-wl-show {
+                height: 90vh;
+                overflow: scroll;
+                padding-bottom: 2rem;
+            }
+            .new-wl-type-aera {
+                padding: 0;
+                margin: 0;
+                position: fixed;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                display: flex;
+                background-color: #eef0f4;
+            }
+            .new-wl-ol {
+                font-size: 1rem;
+            }
+            .new-wl-ol li {
+                margin: 5px;
+            }
+            .new-wl-ol-mean {
+                padding-left: 30px;
+                color: #b1b1b1;
+                overflow: hidden;
+            }
+            .new-wl-ol-mean input {
+                width: 60%;
+            }
+            .out-of-warning-number {
+                color: sandybrown;
+            }
+            .out-of-max-number {
+                color: rgb(202, 53, 37);
+            }
+            .new-wl-label {
+                padding: 10px;
+                width: 5%;
+                text-align: center;
+                font-size: 1rem;
+                border-top: 1px solid #bebebe;
+            }
+            .new-wl-input {
+                border: 1px solid #bebebe;
+                border-bottom: none;
+                width: 75%;
+                padding: 10px;
+                font-size: 1rem;
+                padding: 10px;
+            }
+            .new-wl-btn {
+                width: 10%;
+                background-color: #42b983;
+                color: #fff;
+                font-size: 1rem;
+                border-color: #42b983;
+            }
+            .new-wl-file {
+                padding: 0 20%;
+                margin: 0;
+                position: fixed;
+                top: 0;
+                width: 60%;
+                display: flex;
+                background-color: #fff;
+                box-shadow: 1px 1px 1px 1px #dfdfdf;
+            }
+            .new-wl-file-input {
+                margin: 10px 0 10px 10px;
+                border: 1px solid #bebebe;
+                width: 80%;
+                padding: 10px;
+                font-size: 1rem;
+            }
+            .new-wl-file-btn {
+                margin: 10px 10px 10px 0;
+                width: 20%;
+                background-color: #42b983;
+                color: #fff;
+                font-size: 1rem;
+                border-color: #42b983;
+            }
+            .change-input {
+                border: none;
+                border-bottom: 1px solid #2c3e50;
+                font-size: 1rem;
+                background: transparent;
+                max-width: 100%;
+                overflow: hidden;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="new-wl-show">
+            <ol class="new-wl-ol" id="newWlOl">
+            </ol>
+        </div>
+        <div class="new-wl-file">
+            <input class="new-wl-file-input hide" id="newWlFileInput" type="text" placeholder="输入要保存的单词表名">
+            <button class="new-wl-file-btn hide" id="newWlSaveFileBtn">保存</button>
+        </div>
+        <div class="new-wl-type-aera" id="new-wl-type-aera">
+            <label class="new-wl-label">></label>
+            <input class="new-wl-input" id="newWlInput" type="text" placeholder="输入单词 Enter 添加">
+            <button class="new-wl-btn" id="newWlBtn">添加</button>
+            <button class="new-wl-btn" id="newWlSaveBtn">保存</button>
+        </div>
+	</body>
+	<script>
+        console.log(__dirname);
+        require('../../renderProcess/newWordList.js');
+	</script>
+</html>

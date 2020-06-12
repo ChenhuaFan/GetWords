@@ -1,0 +1,25 @@
+<template class="task-template">
+    <div class="section-wordlist content-pages hide">
+        <div class="function-title">
+            <h1 class="main-title left-border-green">我的单词表</h1>
+            <ul class="functions-list">
+                <li></li>
+            </ul>
+        </div>
+        <div class="work-space">
+            <div class="learn-aera-main-panel">
+                <button id="prePage" class="btn btn-default">上一页</button>
+                <button id="nextPage" class="btn btn-default">下一页</button>
+                <button id="reReload" class="btn btn-default">重载列表</button>
+                <button id="newWordListBtn" class="btn btn-default">新建单词表</button>
+            </div>
+            <p class="left-border-green" style="margin-left: 20px" id="page-progress">1 / 2</p>
+            <ul class="files-list" id="filesList">
+                <li class="file-item" data-file="tpo-1">tpo-1.txt</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        require('./app/renderProcess/wordList.js');
+    </script>
+</template>

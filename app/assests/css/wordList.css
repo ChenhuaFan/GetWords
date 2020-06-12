@@ -1,0 +1,30 @@
+.files-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.files-list li {
+    height: 20px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+    text-align: center;
+    padding-top: 130px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.files-list li:hover {
+    text-decoration: underline;
+    color: #42b983;
+}
+
+.dir-item {
+    background-image: url("../imgs/folder.png");
+}
+
+.file-item {
+    background-image: url("../imgs/file.png");
+}

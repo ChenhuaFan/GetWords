@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎使用</title>
+		<!--import css-->
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="Stylesheet" type="text/css" href="app/assests/css/index.css">
+		<link rel="Stylesheet" type="text/css" href="app/assests/css/about.css">
+		<link rel="Stylesheet" type="text/css" href="app/assests/css/learn.css">
+		<link rel="Stylesheet" type="text/css" href="app/assests/css/wordList.css">
+		<!--import templates-->
+		<link rel="import" href="app/sections/about.html">
+		<link rel="import" href="app/sections/wordList/index.html">
+		<link rel="import" href="app/sections/setting/index.html">
+		<link rel="import" href="app/sections/learn/index.html">
+		<link rel="import" href="app/sections/model/index.html">
+	</head>
+	<body>
+		<div class="nav-wrapper">
+			<div class="nav-title">
+				<h1 class="main-title"><span><img class="logo" src="app/assests/appIcon/logo.png"></span> 来，背单词吧</h1>
+				<p class="sub-title">高效的背单词工具</p>
+			</div>
+			<ul class="nav-items-list">
+				<li class="nav-item-flag" data-section=".section-wordlist"><button  class="nav-item" >单词表</button></li>
+				<li class="nav-item-flag" data-section=".section-learn"><button  class="nav-item" >学习</button></li>
+				<li class="nav-item-flag" data-section=".section-learnModel"><button class="nav-item">模块</button></li>
+				<li class="nav-item-flag" data-section=".section-setting"><button class="nav-item" >设置</button></li>
+				<li class="nav-item-flag" data-section=".section-about"><button class="nav-item" >关于</button></li>
+			</ul>
+			<textarea class="form-control" rows="7" placeholder="你可能需要随手写点啥" style="
+				padding: 2.5%;
+				/* width: 90%; */
+				margin: 2.5%;
+				max-width: 90%;
+				min-width: 90%;
+				border: 1px solid #d6d6d6;
+				border-radius: 5px;
+				font-size: 14px;
+			"></textarea>
+			<div class="nav-footer">
+				<p>Have fun :D</p>
+			</div>
+		</div>
+		<div class="content"></div>
+	</body>
+	<script>
+		const notification = {
+			
+		}
+		require('./app/assests/scripts/import');
+		require('./app/mainProcess/index');
+		require('./app/mainProcess/about');
+	</script>
+</html>

@@ -1,0 +1,70 @@
+<template class="task-template">
+    <div class="section-learn content-pages how-to-use" id="learnSection">
+        <div class="function-title">
+            <h1 class="main-title left-border-green">学习</h1>
+        </div>
+        <p id="noRoot" style="color:red; padding-left: 15px">您没有设置根目录，无法学习。请前往“设置”中进行设置。</p>
+        <div id="haveRoot" class="work-space">
+            <div class="init" id="initBox">
+                <div class="search-box" id="step1">
+                    <label class="left-border-green">Step 1: </label>
+                    <!-- <input type="text" id="learnName" placeholder="输入想要学习的单词表"> -->
+                    <input type="file" id="learnName" multiple="multiple" placeholder="输入想要学习的单词表">
+                </div>
+                <div class="search-box hide" id="step2">
+                    <label class="left-border-green">Step 2: </label>
+                    <ul style="display: flex; flex-wrap: wrap;" id="learnModelList"></ul>
+                </div>
+                <div class="search-box hide" id="step3">
+                    <label class="left-border-green">您已选择: (再次点击可删除)</label>
+                    <ul style="display: flex; flex-wrap: wrap;" id="choosenLearnModelList"></ul>
+                </div>
+                <button class="btn btn-disabled" id="learnBtn" disabled="disabled">START !</button>
+            </div>
+            <div class="learn-aera">
+                <div class="learn-aera-main hide" id="learnAera">
+                    <!--学习控制面板-->
+                    <div class="learn-aera-main-panel" id="panelBox">
+                    </div>
+                    <!--学习阶段-->
+                    <div class="learn-phase-indictor" id="learnPhaseIndictor"></div>
+                    <!--问题盒子-->
+                    <div class="learn-aera-main-question" id="questionBox">
+                        <h1 id="questionContent">这是问题</h1>
+                        <audio id="questionVoice"></audio>
+                    </div>
+                    <!-- 答案盒子 -->
+                    <div class="answerBox hide" id="answerBox">
+                        <h1 id="answerContent">这里是答案</h1>
+                        <audio id="answerVoice"></audio>
+                    </div>
+                    <!--学习进度-->
+                    <div class="learn-aera-main-info" id="learnProgress">
+                        已完成： ? / ?
+                    </div>
+                    <!--遮罩盒子-->
+                    <div class="learn-aera-main-options" id="maskBox">
+                        <ul class="" id="mask">
+                            <!-- <li class="btn btn-warning">会</li> -->
+                        </ul>
+                    </div>
+                    <!--选项盒子-->
+                    <div class="optionsBox" id="optionsBox">
+                        <ul class="" id="options">
+                            <!-- <li class="btn btn-default" data-word="apple">A. wtf</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 总结 -->
+            <div class="welldone hide" id="welldoneBox">
+                    <h1>恭喜，您完成了背词计划</h1>
+                    <p>Well done, you made it!</p>
+                    <button class="btn btn-right">好的！</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        require('./app/renderProcess/learn.js');
+    </script>
+</template>

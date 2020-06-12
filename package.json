@@ -1,0 +1,23 @@
+{
+  "name": "recite",
+  "dependencies": {
+    "coroutine": "^0.3.1",
+    "electron": "^7.1.8",
+    "lowdb": "^1.0.0",
+    "request": "^2.87.0",
+    "superagent": "^3.8.3"
+  },
+  "scripts": {
+    "start": "electron .",
+    "asarPack": "asar pack ./app ./app.asar",
+    "package": "electron-packager . getTheWord --platform=mas --arch=x64 --icon=./app/assests/appIcon/logo.icns --out=./dist --app-version=4.0.0"
+  },
+  "main": "main.js",
+  "version": "2.0.0",
+  "license": "MIT",
+  "description": "",
+  "author": "fanchenhua",
+  "devDependencies": {
+    "electron-packager": "^14.1.1"
+  }
+}
